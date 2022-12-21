@@ -1,0 +1,19 @@
+footer {
+    padding: 0px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+
+    font-size: small;
+    
+    width: 100%;
+    
+
+    p {
+        color: white;
+        text-align: center;
+        span + span::before {
+            content: " | "
+        }
+    }
+
+}

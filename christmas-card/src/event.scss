@@ -1,0 +1,110 @@
+.event {
+    background-color: black;
+    color: white;
+
+    display: grid;
+    // align-items: center;
+    // justify-content: center;
+
+    aspect-ratio: 1/1;
+
+    text-align: center;
+
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    &__box {
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+
+    &:hover {
+        transform: scale3d(1.05,1.05,1);
+        transition-duration: 0.3s;
+    }
+
+    h3 {
+        grid-row: 1;
+        grid-column: 1;
+        color: white;
+        margin: 0;
+        // padding-bottom: 50%;
+    }
+
+    img.bow {
+        height: 0px;
+        width: 0px;
+        transform: scale3d(0,95, 0,95, 1);
+        opacity: 0;
+    }
+
+    &:hover img.bow {
+        transition: opacity 0.2s ease-out 0.1s, transform 0.2s ease-out 0.1s;
+        width: 50%;
+        height: initial;
+        opacity: 1;
+        transform: scale3d(1, 0, 1, 1);
+        display: block;
+    }
+
+
+
+    .box {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    > .content {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .line {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .horizontal-line {
+        height: 10%;
+        width: 0%;
+        align-self: center;
+        justify-self: center;
+        background-color: var(--color-red);
+
+        // border-top: 3px #0F6177 solid;
+        // border-bottom: 3px #0F6177 solid;
+    }
+
+    &:hover .horizontal-line {
+        width: 100%;
+        transition: width 0.2s ease-out 0s;
+    }
+
+    .vertical-line {
+        width: 10%;
+        height: 0%;
+        justify-self: center;
+        align-self: center;
+
+        // background-color: lighten($color: red, $amount: 30%);
+        // background-color: #C0392B;
+        background-color: var(--color-red);
+
+
+        // border-left: 3px #0F6177 solid;
+        // border-right: 3px #0F6177 solid;
+
+        
+    }
+
+    &:hover .vertical-line {
+        height: 100%;
+        transition: height 0.2s ease-out 0s;
+    }
+
+}

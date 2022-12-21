@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="/src/styles.scss" />
+    <link href="/font/font.css" rel="stylesheet">
+    <title>Merry Christmas!</title>
+  </head>
+  <body>
+    <data-store></data-store>    
+    <header class="hero">
+      <div class="parallax">
+        <!-- <video muted autoPlay={true} loop>
+          <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+          <source src="http://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg" />
+        </video> -->
+      </div>
+      <div class="card-holder">
+        <div class="card">
+          <christmas-letter></christmas-letter>
+        </div>
+      </div>
+    </header>
+    <memory-wrapper></memory-wrapper>
+    <footer>
+      <p>
+        <span>Built by Martijn, who hopes you enjoyed it</span>
+        <span>Built by Martijn with StencilJS & Vite</span>
+        <span>Built by Martijn who wishes you the best for 2023</span>
+      </p>
+    </footer>
+    <div id="modals" ></div>
+    <script type="module" src="node_modules/christmas-card-components/www/build/christmas-card-components.esm.js"></script>
+  </body>
+</html>

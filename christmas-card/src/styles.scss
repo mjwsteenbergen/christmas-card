@@ -1,0 +1,61 @@
+@import "base.scss";
+@import "hero.scss";
+@import "event.scss";
+@import "footer.scss";
+
+:root {
+    //https://www.color-meanings.com/wp-content/uploads/frozen-cranberries-christmas-color-palette-1536x1385.jpeg
+    --color-black: #646f74;
+    
+    --color-green-l15: #FFFFFF;
+    --color-green-l14: #F2F8F3;
+    --color-green-l13: #E5F0E8;
+    --color-green-l12: #D8E9DC;
+    --color-green-l11: #CBE2D1;
+    --color-green-l10: #BEDAC5;
+    --color-green-l9: #B1D3BA;
+    --color-green-l8: #A4CCAE;
+    --color-green-l7: #97C4A3;
+    --color-green-l6: #89BD97;
+    --color-green-l5: #7CB68C;
+    --color-green-l4: #6FAE80;
+    --color-green-l3: #62A775;
+    --color-green-l2: #589D6A;
+    --color-green-l1: #519062;
+    --color-green: #498359;
+    --color-green-d1: #427650;
+    --color-green-d2: #3B6847;
+    --color-green-d3: #335B3E;
+    --color-green-d4: #2C4E35;
+    --color-green-d5: #25412C;
+    --color-green-d6: #1D3423;
+    --color-green-d7: #16271B;
+    --color-green-d8: #0F1A12;
+    --color-green-d9: #070D09;
+    --color-red: #C84630;
+    --color-beige: #e1cca1;
+}
+
+* {
+    font-size: 20px;
+    font-family: ui-sans-serif,system-ui,sans-serif;
+}
+
+body {
+    background-color: var(--color-green);
+    margin: 0;
+    background-image: url('../public/backgound.jpg');
+    // @import "main";
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+body:has(dialog[data-isOpen="true"]) {
+    overflow: hidden;
+}

@@ -1,0 +1,48 @@
+.hero {
+    min-height: 100vh;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    // background-image: url("blob:https://player.vimeo.com/5a34e60c-37e7-40c7-aaaa-b7a141753925");
+
+    .parallax{ 
+        height: 300px;
+        padding-bottom: 50px;
+        padding-top: 50px; 
+        
+        video{ 
+            min-width: 100%;
+            position: fixed;
+            top:0;
+            z-index: -999;
+        }
+    }
+
+    .card-holder {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .card {
+        background-color: white;
+        max-width: 60ch;
+        padding: 50px;
+        border-radius: 50px;
+
+        .divider {
+            width: calc(100% + 100px);
+            height: 1px;
+            background-color: grey;
+            margin: 0 -50px;
+        }
+
+        @media(max-width: 600px) {
+            width: calc(100vw - 100px);
+            border-radius: 0;
+        }
+    }
+}
