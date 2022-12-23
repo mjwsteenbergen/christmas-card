@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "christmas-card-components": "file:../../christmas-card-components"
+    "christmas-card-components": "file:../christmas-card-components"
   },
   "devDependencies": {
     "sass": "^1.56.0",

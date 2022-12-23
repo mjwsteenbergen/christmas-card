@@ -39,7 +39,6 @@ export class DataStore {
 
 
   fetch() {
-
     const isBroken = () => {
       this.data = {
         letter: "Hi! This page has no way of identifying you. Please use the url sent by Martijn. If this was a link sent by Martijn, please contact him, as he did something wrong. Merry Christmas!",

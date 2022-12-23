@@ -20,9 +20,17 @@ export class ChristmasEventComponent {
 
 
   render() {
-    return (<div class="event" style={{
-          backgroundImage: `linear-gradient(#00000057, #00000057), url(${this.ev.mainImage})`
-        }} onClick={() => this.click()}>
+    const background = this.ev.mainImage ? 
+      {
+        backgroundImage: `linear-gradient(#00000057, #00000057), url(${this.ev.mainImage})`
+      }
+      :
+      {
+        backgroundImage: `linear-gradient(#00000057, #00000057), url(https://wallpaperaccess.com/full/883332.jpg)`,
+        backgroundColor: `#bc9a68`
+      }
+
+    return (<div class="event" style={background} onClick={() => this.click()}>
         <div class="box grid">
 
           <div class="vertical-line line" />
